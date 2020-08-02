@@ -1,0 +1,10 @@
+
+DROP TABLE IF EXISTS ORDER_ITEM;  
+CREATE TABLE ORDER_ITEM (
+  order_item_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  product_code VARCHAR(45) NOT NULL,
+  product_name VARCHAR(45) NOT NULL,
+  quantity INT(11) NOT NULL,
+  order_id INT(11) NOT NULL,
+  PRIMARY KEY (order_item_id)
+)
